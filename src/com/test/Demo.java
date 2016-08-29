@@ -9,8 +9,9 @@ import org.junit.Test;
 public class Demo {
     @Test
     public void test01(){
-        GetComInfoUtil gciu = new GetComInfoUtil();
+        GetComInfoUtil gciu = null;
         try {
+            gciu = new GetComInfoUtil();
             // System信息，从jvm获取
             System.out.println("----------------System信息------------------");
             gciu.property();
